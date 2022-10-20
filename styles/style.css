@@ -1,14 +1,85 @@
-html, body {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+	box-sizing: border-box;
 }
 
-html {
-  display: table;
-  margin: auto;
-}
 body {
- background-color: #111827;
- color: white;
- display: table-cell;
- vertical-align: middle;
+	/* color: white; */
+	/* display: table-cell;
+	vertical-align: middle; */
+	font-family: "Inter", sans-serif;
+	background-image: url(../images/bg_blur.jpg);
+	background-size: cover;
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	background-color: #b4b4b4bb;
+	width: auto;
+	text-align: center;
+	border: 5px solid #747d8670;
+	border-radius: 50px;
+	margin-bottom: 50px;
+}
+
+.main.page {
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.chef {
+	border: 10px solid rgb(141, 164, 87);
+}
+
+.top-text-home {
+	margin-bottom: 250px;
+	background-color: rgb(5, 142, 188);
+	border: 2px solid;
+}
+
+.home-title {
+	text-align: center;
+}
+
+.container-recipes {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 5%;
+}
+
+.container-recipes > * {
+	flex: 1;
+}
+
+.image {
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	-webkit-filter: brightness(100%);
+}
+
+.image:hover {
+	color: rgba(120, 89, 89, 0.714);
+	-webkit-filter: brightness(50%);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 0.1s ease;
+}
+
+.github-container {
+	display: flex;
+	background-color: #a87548;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 21vh;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid #00020370;
+	border-radius: 10px;
 }
