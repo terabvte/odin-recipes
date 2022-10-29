@@ -1,10 +1,10 @@
-.title {
-	text-align: center;
+* {
+	box-sizing: border-box;
 }
 
+/* .title,
 .ingredients {
 	text-align: center;
-
 }
 
 .list {
@@ -12,9 +12,41 @@
 	text-align: left;
 }
 
-.pasta-gif{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+.pasta-gif {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
 }
+
+.main {
+	max-width: 1400px;
+} */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasta-gif {
+    max-width: 500px;
+}
+/* 
+.main {
+	background-color: #b4b4b4bb;
+	width: auto;
+	text-align: center;
+	border: 5px solid #747d8670;
+	border-radius: 50px;
+	margin-bottom: 50px;
+} */
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
