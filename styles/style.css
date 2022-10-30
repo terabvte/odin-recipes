@@ -86,12 +86,17 @@ body {
 	);
 	border: 2px solid;
 	border-image: linear-gradient(90deg, rgba(0,140,69,1) 0%, rgba(244,249,255,1) 39%, rgba(244,249,255,1) 63%, rgba(205,33,42,1) 100%) 10;
-	transition: filter 0.2s;
+	transition: transform 0.5s;
 }
 
 .github-container:hover {
-	filter: brightness(70%);
-	transition: filter 0.2s;
+	/* filter: brightness(70%); */
+	transform: scale(1.2);
+	transition: transform 1s;
+}
+
+.github {
+	transform: scale(2);
 }
 
 ul,
