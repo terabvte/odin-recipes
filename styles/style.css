@@ -4,15 +4,11 @@
 }
 
 body {
-	/* color: white; */
-	/* display: table-cell;
-	vertical-align: middle; */
 	font-family: "Inter", sans-serif;
-	background-image: url(../images/bg_blur.jpg);
+	background: url(../images/bg_blur.jpg) no-repeat center center fixed;
 	background-size: cover;
 	max-width: 1500px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .main {
@@ -38,18 +34,15 @@ body {
 	margin-right: auto;
 }
 
+
 .home-title {
 	text-align: center;
 }
 
 .container-recipes {
 	display: flex;
-	flex-wrap: wrap;
-	margin-left: 5%;
-}
-
-.container-recipes > * {
-	flex: 1;
+	justify-content: center;
+	gap: 80px;
 }
 
 .image {
@@ -92,7 +85,8 @@ body {
 .github-container:hover {
 	/* filter: brightness(70%); */
 	transform: scale(1.2);
-	transition: transform 1s;
+	transition: transform 0.5s;
+	
 }
 
 .github {
@@ -103,3 +97,4 @@ ul,
 ol {
 	list-style: none;
 }
+
