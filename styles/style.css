@@ -22,7 +22,14 @@ body {
 	);
 	text-align: center;
 	border: 5px solid;
-	border-image: linear-gradient(90deg, rgba(0,140,69,1) 0%, rgba(244,249,255,1) 39%, rgba(244,249,255,1) 63%, rgba(205,33,42,1) 100%) 10;
+	border-image: linear-gradient(
+			90deg,
+			rgba(0, 140, 69, 1) 0%,
+			rgba(244, 249, 255, 1) 39%,
+			rgba(244, 249, 255, 1) 63%,
+			rgba(205, 33, 42, 1) 100%
+		)
+		10;
 	border-radius: 10px;
 	margin-top: 2%;
 	margin-bottom: 200px;
@@ -33,7 +40,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 .home-title {
 	text-align: center;
@@ -48,15 +54,89 @@ body {
 .image {
 	width: 400px;
 	height: 300px;
+	height: 100%;
 	transition: filter 0.2s;
 	border: 3.5px solid;
-	border-image:linear-gradient(to right, green 33%, white 33%, white 70%,  red 35%) 2;
+	border-image: linear-gradient(
+			to right,
+			green 33%,
+			white 33%,
+			white 70%,
+			red 35%
+		)
+		2;
 }
+
+
+
+/* .pasta-container {
+	transition: filter 0.2s;
+	border: 3.5px solid;
+	border-image: linear-gradient(
+			to right,
+			green 33%,
+			white 33%,
+			white 70%,
+			red 35%
+		)
+		2;
+} */
 
 .image:hover {
 	filter: brightness(70%);
-	transition: filter 0.2s;
+	transition: all 0.2s;
 }
+
+.pasta-container {
+	position: absolute;
+	left: 20.5%;
+	top: 39%;
+	color: white;
+	font-size: 32px;
+	pointer-events: none;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+	0px 18px 23px rgba(0, 0, 0, 0.1);
+	width: 160px;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+.pasta-text {
+	opacity: 0;
+}
+
+.pasta-container:hover {
+	opacity: 1;
+}
+
+
+
+/* .pasta-text:hover {
+	opacity: 1;
+	color: white;
+	font-size: 32px;
+	position: absolute;
+	
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+	0px 18px 23px rgba(0, 0, 0, 0.1);
+	left: 20%;
+	top: 40%;
+	pointer-events: none;
+} */
+
+/* .pasta:hover::after {
+	width: 320px;
+	color: white;
+	font-size: 32px;
+	position: absolute;
+	
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+	0px 18px 23px rgba(0, 0, 0, 0.1);
+	left: 20%;
+	top: 40%;
+	pointer-events: none;
+	content: "Pasta Carbonara";
+} */
 
 .github-container {
 	display: flex;
@@ -68,7 +148,7 @@ body {
 	margin-top: 30vh;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid ;
+	border: 1px solid;
 	background: rgb(0, 140, 69);
 	background: linear-gradient(
 		90deg,
@@ -78,7 +158,14 @@ body {
 		rgba(205, 33, 42, 1) 100%
 	);
 	border: 2px solid;
-	border-image: linear-gradient(90deg, rgba(0,140,69,1) 0%, rgba(244,249,255,1) 39%, rgba(244,249,255,1) 63%, rgba(205,33,42,1) 100%) 10;
+	border-image: linear-gradient(
+			90deg,
+			rgba(0, 140, 69, 1) 0%,
+			rgba(244, 249, 255, 1) 39%,
+			rgba(244, 249, 255, 1) 63%,
+			rgba(205, 33, 42, 1) 100%
+		)
+		10;
 	transition: transform 0.5s;
 }
 
@@ -86,7 +173,6 @@ body {
 	/* filter: brightness(70%); */
 	transform: scale(1.2);
 	transition: transform 0.5s;
-	
 }
 
 .github {
@@ -97,4 +183,3 @@ ul,
 ol {
 	list-style: none;
 }
-
